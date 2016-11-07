@@ -1,5 +1,347 @@
-$aColor: lightblue;
 
-body {
-	background: $aColor;
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+html {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
 }
+body {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.spaceRow {
+	height: 1em;
+	width: 100%;
+}
+.mainContainer {
+	position: relative;
+	width: 70%;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 2em;
+	padding-bottom: .1em;
+	border-radius: .5em;
+	border: solid 1px #3e92d2;
+}
+.mainContainerBorderless {
+	position: relative;
+	width: 70%;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 2em;
+}
+.mcTitle {
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	color: white;
+	background: #3e92d2;
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
+}
+.mcTitleInner {
+	margin-left: 1em;
+}
+.mcBody {
+	width: 100%;
+}
+@media(max-width: 600px) {
+	.mainContainer {
+		width: 90%;
+		margin-top: 2em;
+	}
+	.mainContainerBorderless {
+		width: 90%;
+		margin-top: 2em;
+	}
+}
+
+
+
+
+/* top bar code */
+.topBar a {
+	color: #3e92d2;
+}
+.logoPic {
+	height: 2em;
+	width: 2em;
+	/*background-image: url(logo.svg);*/
+	background-size: cover;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.logoText {
+	font-size: 2em;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.topRight {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 1.5em;
+	vertical-align: bottom;
+}
+.accountButton {
+	padding: .2em;
+}
+.accountButton:hover {
+	text-decoration: underline;
+}
+@media(max-width: 600px) {
+	.logoPic {
+		height: 1.5em;
+		width: 1.5em;
+	}
+	.logoText {
+		font-size: 1.5em;
+	}
+}
+
+
+
+
+/* front page */
+.headerPic {
+	position: relative;
+	width: 100%;
+	height: 50%;
+	/*background-image: url('blueflame.jpg');*/
+	background: black;
+}
+.leftTitle {
+	width: 100%;
+	font-size: 1.5em;
+	color: #3e92d2;
+}
+.centerTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	color: #3e92d2;
+}
+.centerParagraph {
+	width: 70%;
+	margin: auto;
+	margin-top: 1em;
+}
+.footer {
+	width: 100%;
+	margin-top: 2em;
+	height: 10em;
+	background: #3e92d2;
+}
+
+
+
+
+/* dashboard structural */
+.dashBar {
+	width: 100%;
+	height: 2em;
+	margin-top: 2em;
+	background: #3e92d2;
+}
+.dashMenu {
+	width: 100%;
+	color: #3e92d2;
+	border-bottom: solid 1px #3e92d2;
+}
+.dashMenuInner {
+	width: 70%;
+	line-height: 2em;
+	margin: auto;
+}
+.dashMenuInner a {
+	color: #3e92d2;
+	margin-left: 1em;
+}
+.dashMenuInner a:hover {
+	text-decoration: underline;
+}
+.dashMenuItem {
+	white-space: nowrap;
+}
+@media(max-width: 600px) {
+	.dashMenuInner {
+		margin-left: 0;
+	}
+	.dashMenuItem {
+		display: block;
+	}
+}
+
+
+/* settings page */
+.settingsRow {
+	width: 100%;
+	margin-top: 1em;
+}
+.switchColumn {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1em;
+	width: 4em;
+	color: #3e92d2;
+}
+	.toggleOuter {
+		border: solid 1px;
+		width: 4em;
+		height: 2em;
+		border-radius: 2em;
+	}
+	.toggleInner {
+		background: #3e92d2;
+		height: 1.4em;
+		width: 1.4em;
+		border-radius: 1.4em;
+		margin-top: .3em;
+		margin-left: .3em;
+		transition: margin-left .5s;
+	}
+	.offSwitch {
+		margin-left: 2.3em
+	}
+	.toggleLabel {
+		width: 4em;
+		height: 1em;
+		text-align: center;
+	}
+.descColumn {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1em;
+	width: 75%;
+}
+.basicInput {
+	display: block;
+}
+.nowrap {
+	white-space: nowrap;
+}
+@media(max-width: 600px) {
+	.descColumn {
+		width: 60%;
+	}
+}
+
+
+/* builder page */
+
+.menuRow {
+	width: 100%;
+	margin-top: 1em;
+}
+.menuRow:hover > .insertRow {
+	opacity: 1;
+}
+.insertRow {
+	width: 100%;
+	transition: .5s;
+	opacity: 0;
+	border-bottom: solid 1px #3e92d2;
+	text-align: center;
+	color: #3e92d2;
+}
+.orderColumn {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1em;
+	width: 3em;
+}
+.atcCircle {
+	height: 1.5em;
+	width: 1.5em;
+	line-height: 1.5em;
+	border-radius: 0.75em;
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	color: #3e92d2;
+	border: solid 1px #3e92d2;
+	text-align: center;
+}
+.atcCircle:hover {
+	background: #3e92d2;
+	color: white;
+}
+.atcPrice {
+	width: 3em;
+	text-align: center;
+	color: #3e92d2;
+}
+.menuColumn {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1em;
+	width: 80%;
+}
+
+.menuSubtitle {
+	color: #3e92d2;
+	font-size: 1.25em;
+}
+
+.addRow, .deleteRow, .deleteSubtitle, .editTitle, .editSubtitle, .editRow {
+	display: inline-block;
+	cursor: pointer; 
+}
+	.editTitleContain {
+		width: 100%;
+		text-align: center;
+	}
+	.editTitleInput {
+
+	}
+	.editTitleButton, .editSubtitleButton, .pickRowType, .cancelRowType, .addRowFinal, .cancelAddRow {
+		background: white;
+		color: #3e92d2;
+		border: solid 1px #3e92d2;
+		padding: .2em;
+		border-radius: .5em;
+		margin-left: 1em;
+		cursor: pointer;
+	}
+	.editTitleButton:hover, .editSubtitleButton:hover, .pickRowType:hover, .cancelRowType:hover, .addRowFinal:hover, .cancelAddRow:hover {
+		background: #3e92d2;
+		color: white;
+	}
+
+.itemTitleInput {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+}
+.itemDescInput {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+}
+.itemPriceInput {
+	width: 5em;
+	margin-bottom: 1em;
+}
+.deleteSection {
+	width: 100%;
+	text-align: center;
+	color: #3e92d2;
+	cursor: pointer;
+}
+.newMC {
+	border: dashed 1px #3e92d2;
+	height: 3em;
+	line-height: 3em;
+	color: #3e92d2;
+	text-align: center;
+	cursor: pointer;
+}
+
+@media(max-width: 600px) {
+	.menuColumn {
+		width: 70%;
+	}
+}
+

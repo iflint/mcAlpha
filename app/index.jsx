@@ -2,13 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 
-import stylesheet from './style.scss'
+import Home from './components/home.jsx'
 
-class Home extends React.Component {
-	render () {
-		return <div>home</div>
-	}
-}
+import stylesheet from './style.scss'
+import database from './database.js'
+
 
 class Login extends React.Component {
 	render () {
