@@ -17,7 +17,7 @@ class Home extends React.Component {
 				    <a className="logoText" href="/">menucamp</a>
 				    <div className="topRight">
 					    <a className="accountButton" href="/#/login">Log In</a>
-					    <a className="accountButton" href="/signup">Sign Up</a>
+					    <a className="accountButton" href="/#/signup">Sign Up</a>
 					</div>
 				</div>
 

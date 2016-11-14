@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: './app/index.jsx',
   output: { 
-    path: './build',
+    path: __dirname + '/build',
     filename: 'bundle.js' 
   },
   watch: true,
