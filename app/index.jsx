@@ -9,7 +9,6 @@ import Settings from './components/settings.jsx'
 
 import stylesheet from './style.scss'
 
-
 class Login extends React.Component {
 	render () {
 		return <div>login</div>

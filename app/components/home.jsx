@@ -5,10 +5,6 @@ import logo from './logo.svg'
 
 class Home extends React.Component {
 	render () {
-		// const listItems = database.map(function(item, i) {
-		// 	return <div className='listedItem' key={i}>{item.title}</div>
-		// })
-
 
 		return (
 			<div className='allHome'>

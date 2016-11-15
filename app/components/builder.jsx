@@ -2,11 +2,14 @@ import React from 'react'
 import database from './database.js'
 import TopBar from './topBar.jsx'
 
+import io from 'socket.io-client'
+var socket = io('localhost:8080')
 
 class Categories extends React.Component {
 
 	constructor(props) {
 		super(props)
+		socket.emit('test')
 		this.state = {
 			items: database
 		}
@@ -38,14 +41,6 @@ class Categories extends React.Component {
 		this.setState({
 			items: postDelete
 		})
-	}
-
-	addRow = (counter) => {
-
-	}
-
-	editTitle = (counter) => {
-
 	}
 
 	render() {
